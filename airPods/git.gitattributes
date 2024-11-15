@@ -1,0 +1,13 @@
+# Automatically normalize text files
+* text=auto
+
+# Enforce LF line endings for specific file types
+*.jsx text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+# Binary files (do not modify)
+*.png binary
+*.jpg binary
+*.gif binary

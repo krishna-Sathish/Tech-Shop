@@ -1,0 +1,30 @@
+.register_form{
+    width: 440px;
+    margin-left: 400px;
+    background-color: rgb(32, 31, 31);
+    
+}
+.login-register-btn{
+    
+    width: 80%;
+    margin-left: 35px;
+}
+.input_field{
+    background: transparent;
+    width: 80%;
+    margin-left: 35px;
+    padding: 10px ;
+    margin-top: 9px;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 5px;
+}
+.close_btn{
+    position: absolute;
+    color: white;
+    background-color: gray;
+    top: 40px;
+    left: 830px;
+    cursor: pointer;
+}
+
