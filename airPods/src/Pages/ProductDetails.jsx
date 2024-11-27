@@ -7,16 +7,16 @@ import useActive from '../hookes/useActive';
 import cartContext from '../contexts/cart/cartContext';
 import productsData from '../data/productsData';
 import SectionsHead from '../main/SectionHead';
-// import RelatedSlider from '../sliders/RelatedSlider';
+import RelatedSlider from '../sliders/RelatedSlider';
 import ProductSummary from '../product/ProductSummary';
 import Services from '../main/Services';
 
 const ProductDetails = () => {
-    useDocTitle('Product Details'); // Hook to set document title
+    useDocTitle('Product Details'); 
     const { handleActive, activeClass } = useActive(0);
     const { addItem } = useContext(cartContext);
     const { productId } = useParams();
-    const prodId = parseInt(productId); // Ensure the id is a number
+    const prodId = parseInt(productId); 
 
     const product = productsData.find(item => item.id === prodId);
 
@@ -68,7 +68,7 @@ const ProductDetails = () => {
                             </div>
                             {/* Main Product Image */}
                             <figure className="prod_details_img mb-4 flex-grow-1">
-                                <img src={previewImg} alt="product-img" className="img-fluid w-100" />
+                                <img src={previewImg} alt="product-img" className="img-fluid w-100 " />
                             </figure>
                         </div>
 
@@ -117,12 +117,17 @@ const ProductDetails = () => {
             </section>
 
             <ProductSummary {...product} />
-            <section id="related_products" className="section py-5">
-                <div className="container">
+            <section id="related_products">
+                <div className="container-fluid">
                     <SectionsHead heading="Related Products" />
+                    <RelatedSlider category={category} />
+
                 </div>
             </section>
+            <div className='survices-section'>
             <Services />
+                 
+            </div>
         </>
     );
 };

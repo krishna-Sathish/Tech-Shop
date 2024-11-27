@@ -9,7 +9,7 @@ const Home = () => {
       <div>
           {/* slider */}
          <HeroSlider/>
-         <h2 className='text-center my-5 text-light'>Featured Products</h2>
+         <h2 className='text-center my-5 text-light featured_product'>Featured Products</h2>
          <FeaturedSlider/>
          <section >
                 <div className="container-fluid">

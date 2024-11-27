@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { displayMoney } from '../calculateMoney/Money';
 import productsData from '../data/productsData';
 import '../stylesCSS/FeaturedSlider.css';
+import { Link } from 'react-router-dom';
 
 const FeaturedSlider = () => {
   const featuredProducts = productsData.filter(item => item.tag === 'featured-product');
@@ -56,9 +57,9 @@ const FeaturedSlider = () => {
             <div key={id} className="slider-item">
               <div className="featured_title text-center text-light">{title}</div>
               <figure className="featured_img">
-                <a href={`${path}${id}`}>
+                <Link to={`${path}${id}`}>
                   <img src={images[0]} alt={title} />
-                </a>
+                </Link>
               </figure>
               <h2 className="products_price fs-5 text-light">
                 {newPrice} &nbsp;

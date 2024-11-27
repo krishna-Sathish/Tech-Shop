@@ -33,13 +33,13 @@ const AccountForm = () => {
               {/*Form-Header */}
               <div className="form_head">
                 <h2 className="text-secondary fw-bold ms-5 mt-3">{isSignupVisible ? "Signup" : "Login"}</h2>
-                <p className="text-secondary ms-5 mt-2">
+                <p className="text-secondary ms-5  mt-2">
                   {isSignupVisible
                     ? "Already have an account ?"
                     : "New to Tech-Shop ?"}
                   &nbsp;&nbsp;
-                  <button type="button" className="btn text-light" onClick={handleIsSignupVisible}>
-                    {isSignupVisible ? "Login" : "Create an account"}
+                  <button type="button" className=" btn login-acc-btn text-light" onClick={handleIsSignupVisible}>
+                    {isSignupVisible ? "Login" : "Create an account"} 
                   </button>
                 </p>
               </div>
@@ -114,13 +114,14 @@ const AccountForm = () => {
               </div>
 
               {/*Form-Close-Btn*/}
-              <div
-                className="close_btn p-1"
-                title="Close"
-                onClick={() => toggleForm(false)}
-              >
-                &times;
-              </div>
+        <div className="modal_centered">
+    
+        <div className="close_btn" onClick={() => toggleForm(false)}>
+            &times; 
+        </div>
+     
+         </div>
+
             </form>
           </div>
         </div>

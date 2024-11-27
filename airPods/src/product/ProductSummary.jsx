@@ -19,7 +19,7 @@ const ProductSummary = (props) => {
 
                     {/*===== Product-Summary=====*/}
                     <div className="product_summary">
-                        <ul className="d-flex justify-content-center">
+                        <ul className="d-flex justify-content-center justify-content-sm-around">
                             <li
                                 className={`tabs_item ${activeClass('specs')} mx-4`}
                                 onClick={() => handleActive('specs')}
@@ -45,9 +45,9 @@ const ProductSummary = (props) => {
                     <div className="container-fluid">
                         {
                             active === 'specs' ? (
-                                <div className=' w-50 '>
+                                <div className=' product_summary_width'>
                                     <ul className='mt-5'>
-                                        <li className='d-flex justify-content-between mt-3'>
+                                        <li className='d-flex  justify-content-between  mt-3'>
                                             <span className='text-secondary'>Brand</span>
                                             <span className='text-light'>{brand}</span>
                                         </li>

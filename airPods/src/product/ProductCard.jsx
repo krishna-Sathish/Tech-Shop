@@ -20,13 +20,13 @@ const ProductCard = (props) => {
   };
 
   return (
-    <div className="col-12 col-sm-6 col-md-4 col-lg-3 my-4">
+    <div className="col-12 col-sm-6 col-md-4 col-lg-3 my-4"> 
       <div className="card bg-black border h-100 p-3">
       <figure className="mb-3">
   <Link to={`/product-details/${id}`}>
     <img src={images[0]} className="card-img-top rounded img-fluid" alt="product-img" />
   </Link>
-</figure>
+</figure> 
 
         <div className="card-body d-flex flex-column">
           <div className="text-danger mb-2">

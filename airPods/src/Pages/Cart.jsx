@@ -51,7 +51,7 @@ const Cart = () => {
                                 btnText="Start Shopping"
                             />
                         ) : (
-                            <div className="d-flex">
+                            <div className="d-flex flex-column flex-md-row">
                                 <div className="cart_left_item">
                                     {
                                         cartItems.map(item => (

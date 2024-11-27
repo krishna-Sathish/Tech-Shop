@@ -1,78 +1,41 @@
 /* Product Card Styles */
 .card-img-top {
-    background-color: rgb(39, 39, 39);
-    width: 100%; /* Ensure the image takes full width */
-    object-fit: cover; /* Maintain aspect ratio */
-    height: 250px; /* Default image height */
+  background-color: rgb(39, 39, 39);
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  /* Mobile Adjustments */
+  .card-img-top {
+    height: 200px;
   }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+
+  .card {
+    text-align: center;
   }
-  
-  /* Button styling */
-  .btn {
-    width: 100%; /* Make the button full-width on mobile */
+
+  .card-title {
     font-size: 1rem;
   }
-  
-  @media screen and (max-width: 600px) {
-    /* Mobile Adjustments */
-    .card-img-top {
-      height: 200px; /* Decrease the image height on mobile */
-    }
-  
-    .card {
-      text-align: center; /* Center text for mobile */
-    }
-  
-    .card-title {
-      font-size: 1rem; /* Adjust title size */
-    }
-  
-    .card-text {
-      font-size: 0.9rem; /* Adjust description size */
-    }
-  
-    .text-light {
-      font-size: 0.95rem; /* Adjust price text size */
-    }
-  
-    .btn {
-      font-size: 1rem; /* Button text size */
-    }
+
+  .card-text {
+    font-size: 0.9rem;
   }
-  
-  @media screen and (min-width: 600px) and (max-width: 768px) {
-    /* Tablet Adjustments */
-    .card-img-top {
-      height: 220px; /* Increase height slightly for tablets */
-    }
-  
-    .card-title {
-      font-size: 1.2rem; /* Adjust title size */
-    }
-  
-    .card-text {
-      font-size: 1rem; /* Adjust description size */
-    }
+
+  .text-light {
+    font-size: 0.95rem;
   }
-  
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-    /* Small Desktop Adjustments */
-    .card-img-top {
-      height: 250px; /* Adjust image size */
-    }
-  
-    .card-title {
-      font-size: 1.3rem; /* Increase title size */
-    }
-  
-    .card-text {
-      font-size: 1.1rem; /* Adjust description size */
-    }
+
+  .btn {
+    font-size: 1rem;
   }
-  
+}
+

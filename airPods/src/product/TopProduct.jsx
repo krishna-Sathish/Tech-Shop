@@ -51,9 +51,9 @@ const TopProducts = () => {
                     ))}
 
                     {/* Browse All Products Card */}
-                    <div className="col-12 col-md-4 col-lg-3 my-4 d-flex justify-content-center">
+                    <div className="col-12 col-md-4 h-50 col-lg-3 my-4 d-flex justify-content-center">
                         <div className="card bg-black border text-center p-4 ">
-                            <Link to="/all-products" className="text-light mt-5 text-decoration-none">
+                            <Link to="/all-products" className="text-light  text-decoration-none">
                                 Browse All <br /> Products <BsArrowRight className="ms-2" />
                             </Link>
                         </div>

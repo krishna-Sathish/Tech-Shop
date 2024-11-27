@@ -16,16 +16,3 @@ const useActive = (initState) => {
 
 export default useActive;
 
-// import { useState } from 'react';
-
-// const useActive = (initialIndex) => {
-//     const [activeIndex, setActiveIndex] = useState(initialIndex);
-
-//     const handleActive = (index) => setActiveIndex(index);
-
-//     const activeClass = (index) => (index === activeIndex ? 'active' : '');
-
-//     return { activeClass, handleActive };
-// };
-
-// export default useActive;

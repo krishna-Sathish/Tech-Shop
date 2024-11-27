@@ -48,10 +48,10 @@ const Footer = () => {
                 <h4 className="text-light">{title}</h4>
                 <ul className="list-unstyled">
                   {menu.map((subItem) => {
-                    const { id, link, path } = subItem;
+                    const { id, link} = subItem;
                     return (
-                      <li key={id} className="mt-2">
-                        <Link className="text-secondary text-decoration-none" to={path}>{link}</Link>
+                      <li key={id} className="mt-2 text-secondary">
+                        {link}
                       </li>
                     );
                   })}

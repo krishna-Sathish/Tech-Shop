@@ -25,17 +25,17 @@ const Header = () => {
 
   return (
     <>
-      <header className={isSticky ? "sticky" : ""}>
-        <div className="container d-flex justify-content-between mt-3">
+      <header>
+        <div className="container-fluid d-flex justify-content-between mt-3">
           <div>
             <h2 className="navbar-brand">
               <Link to="/" className="text-decoration-none text-light fs-5 fw-bold">Tech-Shop</Link>
             </h2>
           </div>
           <nav className="d-flex ">
-            <div >
+            <div>
               <span onClick={() => toggleSearch(true)} title="search" className="text-light mx-3 fs-5 ">
-                <AiOutlineSearch />
+                <AiOutlineSearch className=" cursor" />
               </span>
             </div>
 
@@ -52,7 +52,7 @@ const Header = () => {
               onMouseLeave={() => setIsDropdownVisible(false)}
             >
               <span>
-                <AiOutlineUser  className="text-light mx-3 fs-5 " />
+                <AiOutlineUser  className="text-light mx-3 fs-5 cursor" />
               </span>
               {isDropdownVisible && (
   <div className="dropdown_menu border rounded">
