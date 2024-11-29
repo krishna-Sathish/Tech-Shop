@@ -19,7 +19,7 @@ const ProductSummary = (props) => {
 
                     {/*===== Product-Summary=====*/}
                     <div className="product_summary">
-                        <ul className="d-flex justify-content-center justify-content-sm-around">
+                        <ul className="d-flex flex-column flex-md-row  justify-content-center justify-content-sm-around">
                             <li
                                 className={`tabs_item ${activeClass('specs')} mx-4`}
                                 onClick={() => handleActive('specs')}

@@ -20,7 +20,7 @@ const CartItem = (props) => {
 
     return (
         <>
-            <div className="container d-flex flex-column flex-md-row  justify-content-md-around  cart_item p-5">
+            <div className="container-fluid d-flex flex-column flex-md-row  justify-content-md-around  cart_item p-5">
                 <div>
                 <figure className="cart_item_img">
                     <Link to={`${path}${id}`}>
