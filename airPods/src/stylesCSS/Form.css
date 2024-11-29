@@ -41,7 +41,7 @@
 }
 @media (max-width:600px){
   .register_form {
-    width: 440px;
-    margin-left: 20px;
+    width: 340px;
+    margin-left: 5px;
   }
 }

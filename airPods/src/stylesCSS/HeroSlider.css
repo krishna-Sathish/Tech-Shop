@@ -26,6 +26,9 @@
 }
 
 /* Dots styles */
+.slick-dots li button::before{
+  display: none;
+}
 .hero-slider .slick-dots li button {
   background-color: gray !important;
   border-radius: 50%;
